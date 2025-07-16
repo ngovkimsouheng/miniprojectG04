@@ -21,7 +21,13 @@
     src: url(/Poppins/Poppins-Regular.ttf);
 }
 
+@font-face {
+    font-family: protest;
+    src: url(../Protest_Riot/ProtestRiot-Regular.ttf);
+}
+
 @theme {
+    --font-protest: protest ,"sans-serif";
     --font-Poppins-bold: "Poppins-bold", "sans-serif";
     --font-Poppins-semi-bold: "Poppins-semibold", "sans-serif";
     --font-Poppins-medium: "Poppins-medium", "sans-serif";
@@ -29,7 +35,7 @@
     --color-Primary-color: #BD7B5C;
     --color-Secondary-color: #FFFFFF;
     --color-Accent-color: #373634;
-    --color-Background-color: #D4D4D4;
+    --color-Background-color: #EDDFCC;
 
 }
 
@@ -37,5 +43,5 @@
     --color-Primary-color: #BD7B5C;
     --color-Secondary-color: #FFFFFF;
     --color-Accent-color: #373634;
-    --color-Background-color: #D4D4D4;
+    --color-Background-color: #EDDFCC;
 }
