@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: Poppins-bold;
+    src: url(/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-semibold;
+    src: url(/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-medium;
+    src: url(/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-regular;
+    src: url(/Poppins/Poppins-Regular.ttf);
+}
+
+@theme {
+    --font-Poppins-bold: "Poppins-bold", "sans-serif";
+    --font-Poppins-semi-bold: "Poppins-semibold", "sans-serif";
+    --font-Poppins-medium: "Poppins-medium", "sans-serif";
+    --font-Poppins-regular: "Poppins-regular", "sans-serif";
+    --color-Primary-color: #BD7B5C;
+    --color-Secondary-color: #FFFFFF;
+    --color-Accent-color: #373634;
+    --color-Background-color: #D4D4D4;
+
+}
+
+:root {
+    --color-Primary-color: #BD7B5C;
+    --color-Secondary-color: #FFFFFF;
+    --color-Accent-color: #373634;
+    --color-Background-color: #D4D4D4;
+}
