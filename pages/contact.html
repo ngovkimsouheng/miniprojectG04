@@ -3,99 +3,133 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="/miniprojectG04/src/output.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="/miniprojectG04/src/output.css" />
     <title>Contact Us</title>
   </head>
   <body class="bg-Background-color font-Poppins-regular">
-    <section class="">
-      <div class="text-center contact">
-        <h3 class="text-2xl font-bold text-[#f4f4f4f4] uppercase">
-          Booking Or
-        </h3>
-        <h1 class="text-6xl mt-[50px] font-bold text-[#bd7b5c]">
-          Get Deriction
-        </h1>
+    <section class="bg-Background-color text-[#140e01e5] font-Poppins-regular">
+      <!-- Location Section -->
+      <div class="max-w-screen-xl mx-auto p-4 space-y-10">
+        <div class="flex flex-col md:flex-row gap-4">
+          <!-- Main Image -->
+          <div class="relative w-full md:w-2/3 h-96">
+            <img
+              src="/miniprojectG04/img/contact/cv.webp"
+              alt="Coffee Shop"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center text-white px-4 text-center"
+            >
+              <h1 class="text-2xl md:text-4xl font-bold mb-2">Visit us at</h1>
+              <p class="text-lg md:text-xl">
+                102 South Kingsley Drive, Los Angeles, CA
+              </p>
+              <button
+                class="mt-4 px-6 py-2 bg-orange-500 hover:bg-orange-600 rounded transition"
+              >
+                Get Direction
+              </button>
+            </div>
+          </div>
+
+          <!-- Thumbnails -->
+          <div class="w-full md:w-1/3 flex flex-col gap-4">
+            <img
+              src="/miniprojectG04/img/contact/p1.webp"
+              alt="Seating"
+              class="h-28 w-full object-cover rounded-md"
+            />
+            <img
+              src="/miniprojectG04/img/contact/p2.webp"
+              alt="Couple"
+              class="h-28 w-full object-cover rounded-md"
+            />
+            <img
+              src="/miniprojectG04/img/contact/p3.webp"
+              alt="Interior"
+              class="h-28 w-full object-cover rounded-md"
+            />
+          </div>
+        </div>
+
+        <!-- Static Map Section -->
+        <div>
+          <h2 class="text-2xl  mb-4 font-Poppins-bold">Get Direction</h2>
+          <iframe class="w-full h-96 object-cover rounded-md"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.6314046837424!2d104.89921187584461!3d11.578259843890725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951e96d257a6f%3A0x6b66703c5fc0c7cc!2sScience%20and%20Technology%20Advanced%20Development%20Co.%2C%20Ltd.!5e0!3m2!1skm!2skh!4v1752940616942!5m2!1skm!2skh"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
+
+      <!-- Contact Info & Form -->
       <div
-        class="rounded-lg overflow-hidden flex item-center justify-center map"
+        class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-1 md:grid-cols-2 gap-10"
       >
-        <iframe
-          class="rounded-2xl mt-[50px]"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995835.1533502643!2d104.0724170346781!3d12.844499227826942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951e96d257a6f%3A0x6b66703c5fc0c7cc!2sScience%20and%20Technology%20Advanced%20Development%20Co.%2C%20Ltd.!5e0!3m2!1sen!2skh!4v1752662363745!5m2!1sen!2skh"
-          width="65%"
-          height="600px"
-          style="border: 2px solid #bd7b5c"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </section>
-    <section
-      class="max-w-7xl mx-auto px-4 mt-[30px] sm:px-6 lg:px-8 pt-8 pb-16 grid md:grid-cols-2 lg:grid-cols-2 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-x-8 lg:gap-y-16"
-    >
-      <div class="flex flex-col text-sm/15">
-        <a href=""
-          ><i class="text-3xl fa-solid fa-location-dot">
-            <span class="text-[15px] text-[#373634] p-5"
-              >LATTE-M TOULKOK , PHNOM PENH</span
-            ></i
-          ></a
-        >
-        <a href=""
-          ><i class="text-2xl fa-solid fa-envelope">
-            <span class="text-[15px] text-[#373634] p-5"
-              >LATTECOFFEE@GMAIL.COM</span
-            ></i
-          ></a
-        >
-        <a href=""
-          ><i class="text-2xl fa-solid fa-phone">
-            <span class="text-[15px] text-[#373634] p-5"
-              >(855) 972809206</span
-            ></i
-          ></a
-        >
-        <a href=""
-          ><i class="text-2xl fa-solid fa-clock">
-            <span class="text-[15px] text-[#373634] p-5"
-              >MONDAY - FRIDAY : 9:00AM - 5:00PM</span
-            ></i
-          ></a
-        >
-        <a href=""
-          ><i class="text-2xl fa-solid fa-clock">
-            <span class="text-[15px] text-[#373634] p-5"
-              >SATURDAY : 10:00AM - 3:00PM</span
-            ></i
-          ></a
-        >
-        <a href=""
-          ><i class="text-2xl fa-solid fa-clock">
-            <span class="text-[15px] text-[#373634] p-5"
-              >SUNDAY : CLOSED</span
-            ></i
-          ></a
-        >
-        <a href=""
-          ><i class="text-2xl fa-solid fa-globe">
-            <span class="text-[15px] text-[#373634] p-5"
-              >WWW.LATTECOFFEE.COM</span
-            ></i
-          ></a
-        >
-      </div>
-      <div class="form">
-        <form action="" class="felx-col">
+        <!-- Contact Info -->
+        <div class="space-y-6">
+          <p class="font-Poppins-semi-bold">
+            <i class="fa-solid fa-location-dot text-xl mr-2"></i> LATTE-M
+            TOULKOK, PHNOM PENH
+          </p>
+          <p class="font-Poppins-medium">
+            <i class="fa-solid fa-envelope text-xl mr-2"></i>
+            lattecoffee@gmail.com
+          </p>
+          <p><i class="fa-solid fa-phone text-xl mr-2"></i> (855) 972809206</p>
+          <p>
+            <i class="fa-solid fa-clock text-xl mr-2"></i> Mon–Fri:
+            9:00AM–5:00PM
+          </p>
+          <p>
+            <i class="fa-solid fa-clock text-xl mr-2"></i> Sat: 10:00AM–3:00PM
+          </p>
+          <p><i class="fa-solid fa-clock text-xl mr-2"></i> Sun: Closed</p>
+          <p>
+            <i class="fa-solid fa-globe text-xl mr-2"></i> www.lattecoffee.com
+          </p>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="space-y-5">
           <input
-            class="w-full bg-[#f1f1f1f1] rounded-[9px] p-[18px] border-2 border-[#bd7b5c]"
             type="text"
             name="name"
             id="name"
             placeholder="Your name"
+            class="w-full px-4 py-3 rounded-md border border-[#bd7b5c] focus:ring-2 focus:ring-[#bd7b5c] outline-none"
           />
-          <input type="email" name="mail" id="mail" placeholder="Your email" />
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder="Your email"
+            class="w-full px-4 py-3 rounded-md border border-[#bd7b5c] focus:ring-2 focus:ring-[#bd7b5c] outline-none"
+          />
+          <textarea
+            name="message"
+            id="message"
+            rows="5"
+            placeholder="Your Message"
+            class="w-full px-4 py-3 rounded-md border border-[#bd7b5c] focus:ring-2 focus:ring-[#bd7b5c] outline-none"
+          ></textarea>
+          <button
+            type="submit"
+            class="w-full sm:w-[300px] bg-[#bd7b5c] hover:bg-[#363734] text-white font-bold uppercase py-3 px-6 rounded-full transition-colors"
+          >
+            Send Message
+          </button>
         </form>
       </div>
     </section>
