@@ -12,7 +12,7 @@
     <title>Contact Us</title>
   </head>
   <body class="bg-Background-color font-Poppins-regular">
-    <section class="bg-Background-color text-[#140e01e5] font-Poppins-regular">
+    <section class="bg-Background-color font-Poppins-regular">
       <!-- Location Section -->
       <div class="max-w-screen-xl mx-auto p-4 space-y-10">
         <div class="flex flex-col md:flex-row gap-4">
@@ -21,17 +21,21 @@
             <img
               src="/miniprojectG04/img/contact/cv.webp"
               alt="Coffee Shop"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover rounded-md"
             />
             <div
-              class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center text-white px-4 text-center"
+              class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center text-Secondary-color px-4 text-center font-Poppins-bold"
             >
-              <h1 class="text-2xl md:text-4xl font-Poppins-bold mb-2 text-Accent-color">Visit us at</h1>
+              <h1
+                class="text-2xl md:text-4xl font-Poppins-bold mb-2 text-Secondary-color"
+              >
+                Visit us at
+              </h1>
               <p class="text-lg md:text-xl">
-                102 South Kingsley Drive, Los Angeles, CA
+                562 Toul Kork, Phnom Penh, Cambodia
               </p>
               <button
-                class="mt-4 px-6 py-2 bg-orange-500 hover:bg-orange-600 rounded transition"
+                class="mt-4 px-6 py-2 bg-Primary-color hover:bg-orange-600 rounded transition text-Secondary-color"
               >
                 Get Direction
               </button>
@@ -60,8 +64,9 @@
 
         <!-- Static Map Section -->
         <div>
-          <h2 class="text-2xl  mb-4 font-Poppins-bold">Get Direction</h2>
-          <iframe class="w-full h-96 object-cover rounded-md"
+          <h2 class="text-2xl mb-4 font-Poppins-bold">Get Direction</h2>
+          <iframe
+            class="w-full h-96 object-cover rounded-md"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.6314046837424!2d104.89921187584461!3d11.578259843890725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951e96d257a6f%3A0x6b66703c5fc0c7cc!2sScience%20and%20Technology%20Advanced%20Development%20Co.%2C%20Ltd.!5e0!3m2!1skm!2skh!4v1752940616942!5m2!1skm!2skh"
             width="600"
             height="450"
@@ -78,12 +83,12 @@
         class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-1 md:grid-cols-2 gap-10"
       >
         <!-- Contact Info -->
-        <div class="space-y-6">
-          <p class="font-Poppins-semi-bold">
+        <div class="space-y-6 font-Poppins-bold">
+          <p>
             <i class="fa-solid fa-location-dot text-xl mr-2"></i> LATTE-M
             TOULKOK, PHNOM PENH
           </p>
-          <p class="font-Poppins-medium">
+          <p>
             <i class="fa-solid fa-envelope text-xl mr-2"></i>
             lattecoffee@gmail.com
           </p>
@@ -108,25 +113,25 @@
             name="name"
             id="name"
             placeholder="Your name"
-            class="w-full px-4 py-3 rounded-md border border-[#bd7b5c] focus:ring-2 focus:ring-[#bd7b5c] outline-none"
+            class="w-full px-4 py-3 rounded-md border border-Primary-color focus:ring-2 focus:ring-Primary-color outline-none"
           />
           <input
             type="email"
             name="mail"
             id="mail"
             placeholder="Your email"
-            class="w-full px-4 py-3 rounded-md border border-[#bd7b5c] focus:ring-2 focus:ring-[#bd7b5c] outline-none"
+            class="w-full px-4 py-3 rounded-md border border-Primary-color focus:ring-2 focus:ring-Primary-color outline-none"
           />
           <textarea
             name="message"
             id="message"
             rows="5"
             placeholder="Your Message"
-            class="w-full px-4 py-3 rounded-md border border-[#bd7b5c] focus:ring-2 focus:ring-[#bd7b5c] outline-none"
+            class="w-full px-4 py-3 rounded-md border border-Primary-color focus:ring-2 focus:ring-Primary-color outline-none"
           ></textarea>
           <button
             type="submit"
-            class="w-full sm:w-[300px] bg-[#bd7b5c] hover:bg-[#363734] text-white font-bold uppercase py-3 px-6 rounded-full transition-colors"
+            class="w-full sm:w-[300px] bg-Primary-color hover:bg-Accent-color text-Secondary-color font-bold uppercase py-3 px-6 rounded-full transition-colors"
           >
             Send Message
           </button>
