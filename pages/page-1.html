@@ -3,11 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hot-coffee</title>
+    <title>Refreshment</title>
     <link rel="stylesheet" href="/src/output.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f5f0e1;
+      }
+
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-primary {
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background-color: #5c3d27;
+        transform: scale(1.05);
+      }
+
+      .footer-link {
+        transition: all 0.2s ease;
+      }
+
+      .footer-link:hover {
+        color: #432818;
+        transform: translateX(3px);
+      }
+    </style>
   </head>
   <body class="bg-Background-color">
-      <header class="bg-Primary-color text-Secondary-color sticky top-0 z-10">
+    <header class="bg-Primary-color text-Secondary-color sticky top-0 z-10">
       <nav
         class="md:flex md:justify-between lg:mx-[100px] md:mx-[90px] items-center max-md:flex max-md:justify-between max-md:mx-[40px] sm:mx-[15px]"
       >
@@ -26,321 +69,385 @@
         <ul
           class="md:flex md:gap-[30px] max-md:flex max-md:gap-[15px] max-md:font-extralight max-md:text-[10px] max-sm:text-[7px]"
         >
-          <li><a href="#">Home</a></li>
+          <li><a href="/index.html">Home</a></li>
           <li><a href="./pages/about.html">About</a></li>
-          <li><a href="./pages/manu.html">Manu</a></li>
-          <li><a href="./pages/testimonail.html">Testimonail</a></li>
+          <li><a class="text-yellow-300" href="manu.html">Manu</a></li>   
           <li><a href="./pages/contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main class="text-Accent-color z-1">
-    <main class="pt-0 mt-20">
+    <main class="text-Accent-color z-1 pt-0 mt-20 max-md:mx-[25px]">
       <div class="container mx-auto max-w-[1350px]">
-        <p class="text-4xl font-bold text-center m-10">HOT COFFEE</p>
-        <div class="grid gap-4 lg:grid-cols-4 lg:m-12 md:grid-cols-2 md:m-12 sm:grid-cols-2 sm:m-12">
-          <div class="p-2 flex flex-col bg-gray-100 lg:h-[450px] lg:w-full md:h-[450px] md:w-full sm:h-[360px] sm:w-3xs">
+        <h1 class="text-4xl font-bold text-center m-10 text-Primary-color">
+          HOT DRINKS
+        </h1>
+        <p class="text-center text-lg max-w-2xl mx-auto mb-12 text-gray-600">
+          Warm up with our selection of handcrafted hot beverages. Perfect
+          companions to a cozy moment or enjoyed on their own.
+        </p>
+
+        <div
+          class="grid gap-6 lg:grid-cols-4 lg:m-12 md:grid-cols-2 md:m-12 sm:grid-cols-2 sm:m-12"
+        >
+          <!-- Card 1 -->
+          <div
+            class="p-2 flex flex-col bg-gray-100 rounded-xl h-full card-hover"
+          >
             <img
-              class="rounded-t-lg lg:w-full lg:h-75 md:w-full md:h-75 sm:w-3xs sm:h-55"
-              src="../img/home/img/1.png"
-              alt="Sunset in the mountains"
-            />
-            <div>
-              <div class="font-bold text-xl mb-2"> Elegant Latte with Coffee Beans</div>
-              <p class="text-gray-700 text-base">
-                 A warm latte with a delicate fern-shaped latte art, served in a white cup nestled among roasted coffee beans and rustic coffee tools, evoking a cozy, artisanal café vibe. 
-              </p>
-              <div class="pt-4 flex justify-between">
-                <span
-                  class="inline-block px-3 py-1 font-semibold text-gray-700 mr-2 mb-2 lg:text-2xl md:text-2xl sm:text-[15px] "
-                  >Rs.2</span
-                >
-                <a
-                  href="#"
-                  class="flex items-center justify-center px-3 text-center text-sm font-medium text-white bg-[#432818] rounded-lg hover:bg-[#5c3d27] transition "
-                >
-                  Order Now
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="p-2 flex flex-col bg-gray-100 lg:h-[450px] lg:w-full md:h-[450px] md:w-full sm:h-[360px] sm:w-3xs">
-            <img
-              class="rounded-t-lg lg:w-full lg:h-75 md:w-full md:h-75 sm:w-3xs sm:h-55"
+              class="rounded-t-lg w-full h-48 object-cover"
               src="../img/home/img/page-1.0.png"
-              alt="Sunset in the mountains"
+              alt="Citrus Berry Splash"
             />
-            <div>
-              <div class="font-bold text-xl mb-2">Cinnamon Cappuccino with Biscotti</div>
-              <p class="text-gray-700 text-base">
-                 A creamy cappuccino topped with cinnamon, accompanied by biscotti on a wooden tray with a rustic cloth—ideal for a warm and comforting break. 
+            <div class="flex flex-col flex-grow p-4">
+              <div class="font-bold text-xl mb-2">Cinnamon Cloud Latte</div>
+              <p class="text-gray-700 text-base flex-grow">
+                Espresso and steamed milk topped with cinnamon foam.
               </p>
-              <div class="pt-4 flex justify-between">
+              <div class="pt-4 flex justify-between items-center">
                 <span
-                  class="inline-block px-3 py-1 font-semibold text-gray-700 mr-2 mb-2 lg:text-2xl md:text-2xl sm:text-[15px] "
-                  >Rs.2</span
+                  class="inline-block px-3 py-1 font-semibold text-gray-700 text-xl"
+                  >HOT01</span
                 >
                 <a
                   href="#"
-                  class="flex items-center justify-center px-3 text-center text-sm font-medium text-white bg-[#432818] rounded-lg hover:bg-[#5c3d27] transition "
+                  class="flex items-center bg-Primary-color justify-center px-3 py-2 text-center text-sm font-medium text-white btn-primary rounded-lg"
                 >
                   Order Now
                 </a>
               </div>
             </div>
           </div>
-          <div class="p-2 flex flex-col bg-gray-100 lg:h-[450px] lg:w-full md:h-[450px] md:w-full sm:h-[360px] sm:w-3xs">
+
+          <!-- Card 2 -->
+          <div
+            class="p-2 flex flex-col bg-gray-100 rounded-xl h-full card-hover"
+          >
             <img
-              class="rounded-t-lg lg:w-full lg:h-75 md:w-full md:h-75 sm:w-3xs sm:h-55"
+              class="rounded-t-lg w-full h-48 object-cover"
               src="../img/home/img/page-1.1.png"
-              alt="Sunset in the mountains"
+              alt="Tropical Sunrise"
             />
-            <div>
-              <div class="font-bold text-xl mb-2"> Artistic Caramel Macchiato</div>
-              <p class="text-gray-700 text-base">
-                A stylish caramel macchiato in a black ceramic mug, served on a wooden coaster, surrounded by coffee beans. The star-patterned foam art steals the show.
+            <div class="flex flex-col flex-grow p-4">
+              <div class="font-bold text-xl mb-2">Mango Refresher</div>
+              <p class="text-gray-700 text-base flex-grow">
+                Chilled blend of tropical mango and passionfruit.
               </p>
-              <div class="pt-4 flex justify-between">
+              <div class="pt-4 flex justify-between items-center">
                 <span
-                  class="inline-block px-3 py-1 font-semibold text-gray-700 mr-2 mb-2 lg:text-2xl md:text-2xl sm:text-[15px] "
-                  >Rs.2</span
+                  class="inline-block px-3 py-1 font-semibold text-gray-700 text-xl"
+                  >HOT02</span
                 >
                 <a
                   href="#"
-                  class="flex items-center justify-center px-3 text-center text-sm font-medium text-white bg-[#432818] rounded-lg hover:bg-[#5c3d27] transition "
+                  class="flex items-center bg-Primary-color justify-center px-3 py-2 text-center text-sm font-medium text-white btn-primary rounded-lg"
                 >
                   Order Now
                 </a>
               </div>
             </div>
           </div>
-          <div class="p-2 flex flex-col bg-gray-100 lg:h-[450px] lg:w-full md:h-[450px] md:w-full sm:h-[360px] sm:w-3xs">
+
+          <!-- Card 3 -->
+          <div
+            class="p-2 flex flex-col bg-gray-100 rounded-xl h-full card-hover"
+          >
             <img
-              class="rounded-t-lg lg:w-full lg:h-53 md:w-full md:h-53 sm:w-3xs sm:h-35"
+              class="rounded-t-lg w-full h-48 object-cover"
               src="../img/home/img/page-1.2.png"
-              alt="Sunset in the mountains"
+              alt="Minty Green Revive"
             />
-            <div>
-              <div class="font-bold text-xl mb-2">Classic Espresso Shot</div>
-              <p class="text-gray-700 text-base">
-                A rich and intense espresso shot in a transparent glass cup with a smooth crema on top, surrounded by roasted beans for a bold, no-nonsense coffee experience.
+            <div class="flex flex-col flex-grow p-4">
+              <div class="font-bold text-xl mb-2">Emerald Mint Mocha</div>
+              <p class="text-gray-700 text-base flex-grow">
+                Creamy chocolate with a hint of fresh mint.
               </p>
-              <div class="pt-4 flex justify-between">
+              <div class="pt-4 flex justify-between items-center">
                 <span
-                  class="inline-block px-3 py-1 font-semibold text-gray-700 mr-2 mb-2 lg:text-2xl md:text-2xl sm:text-[15px] "
-                  >Rs.2</span
+                  class="inline-block px-3 py-1 font-semibold text-gray-700 text-xl"
+                  >HOT03</span
                 >
                 <a
                   href="#"
-                  class="flex items-center justify-center px-3 text-center text-sm font-medium text-white bg-[#432818] rounded-lg hover:bg-[#5c3d27] transition "
+                  class="flex items-center bg-Primary-color justify-center px-3 py-2 text-center text-sm font-medium text-white btn-primary rounded-lg"
                 >
                   Order Now
                 </a>
               </div>
             </div>
           </div>
-          <div class="p-2 flex flex-col bg-gray-100 lg:h-[450px] lg:w-full md:h-[450px] md:w-full sm:h-[360px] sm:w-3xs">
+
+          <!-- Card 4 -->
+          <div
+            class="p-2 flex flex-col bg-gray-100 rounded-xl h-full card-hover"
+          >
             <img
-              class="rounded-t-lg lg:w-full lg:h-75 md:w-full md:h-75 sm:w-3xs sm:h-55"
+              class="rounded-t-lg w-full h-48 object-cover"
               src="../img/home/img/page-1.3.png"
-              alt="Sunset in the mountains"
+              alt="Berry Blast Smoothie"
             />
-            <div>
-              <div class="font-bold text-xl mb-2">Mocha with Biscotti</div>
-              <p class="text-gray-700 text-base">
-               A cozy mug of mocha paired with chocolate biscotti.
+            <div class="flex flex-col flex-grow p-4">
+              <div class="font-bold text-xl mb-2">The Berry Fusion</div>
+              <p class="text-gray-700 text-base flex-grow">
+                A smooth, creamy smoothie with a blend of mixed berries.
               </p>
-              <div class="pt-4 flex justify-between">
+              <div class="pt-4 flex justify-between items-center">
                 <span
-                  class="inline-block px-3 py-1 font-semibold text-gray-700 mr-2 mb-2 lg:text-2xl md:text-2xl sm:text-[15px] "
-                  >Rs.2</span
+                  class="inline-block px-3 py-1 font-semibold text-gray-700 text-xl"
+                  >HOT04</span
                 >
                 <a
                   href="#"
-                  class="flex items-center justify-center px-3 text-center text-sm font-medium text-white bg-[#432818] rounded-lg hover:bg-[#5c3d27] transition "
+                  class="flex items-center bg-Primary-color justify-center px-3 py-2 text-center text-sm font-medium text-white btn-primary rounded-lg"
                 >
                   Order Now
                 </a>
               </div>
             </div>
           </div>
-          <div class="p-2 flex flex-col bg-gray-100 lg:h-[450px] lg:w-full md:h-[450px] md:w-full sm:h-[360px] sm:w-3xs">
+
+          <!-- Card 5 -->
+          <div
+            class="p-2 flex flex-col bg-gray-100 rounded-xl h-full card-hover"
+          >
             <img
-              class="rounded-t-lg lg:w-full lg:h-75 md:w-full md:h-75 sm:w-3xs sm:h-55"
+              class="rounded-t-lg w-full h-48 object-cover"
               src="../img/home/img/page-1.4.png"
-              alt="Sunset in the mountains"
+              alt="Citrus Cooler"
             />
-            <div>
-              <div class="font-bold text-xl mb-2">Indian Chai with Cookies</div>
-              <p class="text-gray-700 text-base">
-              chai tea on a wooden tray, served with cookies and sugar. 
+            <div class="flex flex-col flex-grow p-4">
+              <div class="font-bold text-xl mb-2">Belgian Hot Chocolate</div>
+              <p class="text-gray-700 text-base flex-grow">
+                Rich hot chocolate made with Belgian chocolate.
               </p>
-              <div class="pt-4 flex justify-between">
+              <div class="pt-4 flex justify-between items-center">
                 <span
-                  class="inline-block px-3 py-1 font-semibold text-gray-700 mr-2 mb-2 lg:text-2xl md:text-2xl sm:text-[15px] "
-                  >Rs.2</span
+                  class="inline-block px-3 py-1 font-semibold text-gray-700 text-xl"
+                  >HOT05</span
                 >
                 <a
                   href="#"
-                  class="flex items-center justify-center px-3 text-center text-sm font-medium text-white bg-[#432818] rounded-lg hover:bg-[#5c3d27] transition "
+                  class="flex items-center bg-Primary-color justify-center px-3 py-2 text-center text-sm font-medium text-white btn-primary rounded-lg"
                 >
                   Order Now
                 </a>
               </div>
             </div>
           </div>
-          <div class="p-2 flex flex-col bg-gray-100 lg:h-[450px] lg:w-full md:h-[450px] md:w-full sm:h-[360px] sm:w-3xs">
+
+          <!-- Card 6 -->
+          <div
+            class="p-2 flex flex-col bg-gray-100 rounded-xl h-full card-hover"
+          >
             <img
-              class="rounded-t-lg lg:w-full lg:h-75 md:w-full md:h-75 sm:w-3xs sm:h-55"
+              class="rounded-t-lg w-full h-48 object-cover"
               src="../img/home/img/page-1.5.png"
-              alt="Sunset in the mountains"
+              alt="Tropical Sunset"
             />
-            <div>
-              <div class="font-bold text-xl mb-2">Steaming Coffee Fantasy</div>
-              <p class="text-gray-700 text-base">
-                A dramatic, steaming cup of coffee in a clear glass with golden sparkles . 
+            <div class="flex flex-col flex-grow p-4">
+              <div class="font-bold text-xl mb-2">Hazelnut Cappuccino</div>
+              <p class="text-gray-700 text-base flex-grow">
+                A classic cappuccino with a nutty hazelnut foam.
               </p>
-              <div class="pt-4 flex justify-between">
+              <div class="pt-4 flex justify-between items-center">
                 <span
-                  class="inline-block px-3 py-1 font-semibold text-gray-700 mr-2 mb-2 lg:text-2xl md:text-2xl sm:text-[15px] "
-                  >Rs.2</span
+                  class="inline-block px-3 py-1 font-semibold text-gray-700 text-xl"
+                  >HOT06</span
                 >
                 <a
                   href="#"
-                  class="flex items-center justify-center px-3 text-center text-sm font-medium text-white bg-[#432818] rounded-lg hover:bg-[#5c3d27] transition "
+                  class="flex items-center bg-Primary-color justify-center px-3 py-2 text-center text-sm font-medium text-white btn-primary rounded-lg"
                 >
                   Order Now
                 </a>
               </div>
             </div>
           </div>
-          <div class="p-2 flex flex-col bg-gray-100 lg:h-[450px] lg:w-full md:h-[450px] md:w-full sm:h-[360px] sm:w-3xs">
+
+          <!-- Card 7 -->
+          <div
+            class="p-2 flex flex-col bg-gray-100 rounded-xl h-full card-hover"
+          >
             <img
-              class="rounded-t-lg lg:w-full lg:h-75 md:w-full md:h-75 sm:w-3xs sm:h-55"
+              class="rounded-t-lg w-full h-48 object-cover"
               src="../img/home/img/page-1.6.png"
-              alt="Sunset in the mountains"
+              alt="Green Detox Elixir"
             />
-            <div>
-              <div class="font-bold text-xl mb-2">Rustic Hot Chocolate</div>
-              <p class="text-gray-700 text-base">
-                creamy hot chocolate with cinnamon. 
+            <div class="flex flex-col flex-grow p-4">
+              <div class="font-bold text-xl mb-2">Fireside Americano</div>
+              <p class="text-gray-700 text-base flex-grow">
+                Nutrient-packed green juice with kale, spinach and green
+                apple.Bold espresso balanced with hot water.
               </p>
-              <div class="pt-4 flex justify-between mt-2">
+              <div class="pt-4 flex justify-between items-center">
                 <span
-                  class="inline-block px-3 py-1 font-semibold text-gray-700 mr-2 mb-2 lg:text-2xl md:text-2xl sm:text-[15px] "
-                  >Rs.2</span
+                  class="inline-block px-3 py-1 font-semibold text-gray-700 text-xl"
+                  >HOT07</span
                 >
-                 <a
+                <a
                   href="#"
-                  class="flex items-center justify-center px-3 text-center text-sm font-medium text-white bg-[#432818] rounded-lg hover:bg-[#5c3d27] transition "
+                  class="flex items-center bg-Primary-color justify-center px-3 py-2 text-center text-sm font-medium text-white btn-primary rounded-lg"
                 >
                   Order Now
                 </a>
               </div>
             </div>
           </div>
-          
-         
-          
+
+          <!-- Card 8 -->
+          <div
+            class="p-2 flex flex-col bg-gray-100 rounded-xl h-full card-hover"
+          >
+            <img
+              class="rounded-t-lg w-full h-48 object-cover"
+              src="../img/home/img/hot07.jpg"
+              alt="Berry Fusion"
+            />
+            <div class="flex flex-col flex-grow p-4">
+              <div class="font-bold text-xl mb-2">Artisanal Flat White</div>
+              <p class="text-gray-700 text-base flex-grow">
+                Premium espresso with a velvety microfoam finish.
+              </p>
+              <div class="pt-4 flex justify-between items-center">
+                <span
+                  class="inline-block px-3 py-1 font-semibold text-gray-700 text-xl"
+                  >HOT08</span
+                >
+                <a
+                  href="#"
+                  class="flex items-center bg-Primary-color justify-center px-3 py-2 text-center text-sm font-medium text-white btn-primary rounded-lg"
+                >
+                  Order Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
-    <footer
-      class="bg-Secondary-color md:mt-[40px] max-md:mt-[30px] max-md:p-[15px] max-sm:p-[10px] sm:mt-[25px] max-sm:pb-[10px]"
-    >
-      <section
-        class="xl:flex xl:justify-between md:grid md:grid-cols-3 md:grid-rows-2 max-md:grid max-md:grid-rows-3 max-md:grid-cols-2 max-md:place-content-center max-md:gap-[10px] md:gap-[20px] md:place-content-center lg:mx-[100px] md:mx-[90px] max-md:mx-[40px] sm:mx-[15px] md:p-[20px] max-sm:flex max-sm:flex-col max-sm:m-[10px]"
-      >
-        <div class="font-Poppins-bold flex flex-col gap-[15px]">
-          <p class="font-Poppins-bold text-Primary-color">FOLLOW US</p>
-          <div class="flex gap-[10px] text-Primary-color">
-            <ion-icon
-              class="md:text-[28px] max-md:text-[20px]"
-              name="logo-facebook"
-            ></ion-icon
-            ><ion-icon
-              class="md:text-[28px] max-md:text-[20px]"
-              name="logo-tiktok"
-            ></ion-icon
-            ><ion-icon
-              class="md:text-[28px] max-md:text-[20px]"
-              name="logo-instagram"
-            ></ion-icon>
-          </div>
-        </div>
-        <div class="font-Poppins-regular flex flex-col gap-[10px]">
-          <h2
-            class="text-Primary-color font-Poppins-semi-bold md:text-[28px max-md:text-[20px] sm:text-[18px]"
-          >
-            Quick link
-          </h2>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">About</p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">Shop</p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">Market</p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            How we works
-          </p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            Gallery
-          </p>
-        </div>
-        <div class="font-Poppins-regular flex flex-col gap-[10px]">
-          <h2
-            class="text-Primary-color font-Poppins-semi-bold md:text-[28px max-md:text-[20px] sm:text-[18px]"
-          >
-            Main Product
-          </h2>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">Coffee</p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            Green coffee
-          </p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            American black coffee
-          </p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            Roasted Coffee
-          </p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            Coffee bean
-          </p>
-        </div>
-        <div class="font-Poppins-regular flex flex-col gap-[10px]">
-          <h2
-            class="text-Primary-color font-Poppins-semi-bold md:text-[28px max-md:text-[20px] sm:text-[18px]"
-          >
-            Collaboration brands
-          </h2>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            Arabica
-          </p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            Nest coffee
-          </p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            Stabuck
-          </p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">Brown</p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">Nestle</p>
-        </div>
-        <div class="text-Primary-color flex flex-col gap-[10px] md:grid-">
-          <h2
-            class="font-Poppins-semi-bold md:text-[28px max-md:text-[20px] sm:text-[18px]"
-          >
-            Join our newsletter
-          </h2>
+    <footer class="footer-bg pt-16 pb-8 bg-Secondary-color">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
           <div>
-            <input
-              type="text"
-              placeholder="Email"
-              class="ring-2 text-Accent-color focus:ring-2 focus:ring-Secondary-color ring-Primary-color rounded-2xl lg:px-4 lg:py-2 md:px-[10px] md:py-[4px] max-md:px-4 max-md:py-1 sm:px-3 sm:py-1"
-            />
-            <button
-              class="lg:px-[20px] lg:py-[10px] bg-Primary-color lg:rounded-[30px] md:my-[5px] max-md:my-[5px] lg:font-Poppins-bold text-Secondary-color md:px-[15px] md:py-[4px] md:rounded-2xl max-md:px-4 max-md:py-1 max-md:rounded-2xl sm:px-3 sm:py-1 sm:rounded-2xl hover:bg-Secondary-color hover:text-Primary-color hover:ring-2 hover:ring-Primary-color"
-            >
-              send
-            </button>
+            <div class="flex items-center mb-4">
+              <div
+                class="w-10 h-10 rounded-full bg-amber-700 flex items-center justify-center mr-2"
+              >
+                <span class="text-amber-100 text-xl">☕</span>
+              </div>
+              <h3 class="text-xl font-bold text-amber-900">LATTE-M</h3>
+            </div>
+            <p class="text-amber-700 mb-4">
+              Crafting exceptional coffee experiences since 2007.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-amber-900 hover:text-amber-700"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-amber-900 hover:text-amber-700"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-amber-900 hover:text-amber-700"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-amber-900 hover:text-amber-700"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-4 text-amber-900">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="index.html" class="text-amber-700 hover:text-amber-900"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="menu.html" class="text-amber-700 hover:text-amber-900"
+                  >Our Menu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="testimonials.html"
+                  class="text-amber-700 hover:text-amber-900"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-amber-700 hover:text-amber-900"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-4 text-amber-900">Products</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >Coffee Blends</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >Brewing Equipment</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >Merchandise</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >Gift Cards</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >Subscription Box</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-4 text-amber-900">Newsletter</h4>
+            <p class="text-amber-700 mb-4">
+              Subscribe for exclusive offers and coffee tips
+            </p>
+            <form class="flex flex-col space-y-3">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="px-4 py-2 rounded-lg border border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-500"
+              />
+              <button
+                type="submit"
+                class="bg-amber-700 text-amber-100 py-2 rounded-lg hover:bg-amber-800 transition"
+              >
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
-      </section>
+
+        <div class="border-t border-amber-200 mt-12 pt-6 text-center">
+          <p class="text-amber-700">
+            &copy; 2025 LATTE-M Coffee Company. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

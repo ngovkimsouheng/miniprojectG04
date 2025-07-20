@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page - LATTE-M Coffee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #eddfcc;
+        scroll-behavior: smooth;
+      }
+
+      .fade-in-section {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.7s ease-out;
+      }
+
+      .fade-in-section.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .bg-Primary-color {
+        background-color: #973c00;
+      }
+
+      .text-Secondary-color {
+        color: #eddfcc;
+      }
+    </style>
+  </head>
+  <body class="coffee-bean-pattern">
+    <!-- Header -->
+    <header class="bg-Primary-color text-Secondary-color sticky top-0 z-10">
+      <nav
+        class="md:flex md:justify-between lg:mx-[100px] md:mx-[90px] items-center max-md:flex max-md:justify-between max-md:mx-[40px] sm:mx-[15px]"
+      >
+        <div class="flex gap-[10px] items-center">
+          <img
+            class="md:w-[50px] max-md:w-[45px] sm:pb-[15px] max-sm:pb-[13px]"
+            src="../img/home/coffeelogo.webp"
+            alt="coffee-logo"
+          />
+          <p
+            class="font-Poppins-semi-bold lg:text-[28px] md:text-[18px] max-md:text-[15px] max-sm:text-[10px]"
+          >
+            LATTE-M
+          </p>
+        </div>
+        <ul
+          class="md:flex md:gap-[30px] max-md:flex max-md:gap-[15px] max-md:font-extralight max-md:text-[10px] max-sm:text-[7px]"
+        >
+          <li><a href="/index.html">Home</a></li>
+          <li><a class="text-yellow-300" href="#">About</a></li>
+          <li><a href="manu.html">Manu</a></li>
+          <li><a href="./pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="z-1">
+      <!-- About Us Section -->
+      <section
+        id="about"
+        class="py-16 px-4 text-center fade-in-section bg-Background-color"
+      >
+        <div class="max-w-4xl mx-auto">
+          <div
+            class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white shadow-lg mb-6 flex items-center justify-center bg-amber-800"
+          >
+            <img src="../img/home/coffeesection2.png" alt="logo" />
+          </div>
+          <h2 class="text-4xl font-bold mb-4 text-amber-900">ABOUT US</h2>
+          <p class="text-lg text-amber-800 mb-8 max-w-2xl mx-auto">
+            At LATTE-M, we're passionate about great coffee and great community.
+            Since 2007, we've been crafting exceptional coffee experiences using
+            ethically sourced beans and artisanal roasting techniques.
+          </p>
+          <div class="flex justify-center gap-6 mt-4 text-2xl text-amber-800">
+            <a href="#" class="hover:text-amber-600 transition"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" class="hover:text-amber-600 transition"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="hover:text-amber-600 transition"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hero Section -->
+      <div class="relative z-1">
+        <div
+          class="relative bg-center lg:h-[500px] md:h-[600px] w-full"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+          "
+        >
+          <div class="absolute inset-0"></div>
+          <div
+            class="relative z-10 text-white p-6 md:p-12 h-full flex flex-col justify-center"
+          >
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 max-w-2xl">
+              Our Coffee Journey
+            </h1>
+            <p
+              class="text-lg md:text-xl max-w-2xl mb-8 max-md:text-[15px] max-md:line-clamp-3"
+            >
+              At LATTE-M, our journey began with a passion for exceptional
+              coffee and a vision to create a cozy haven for coffee lovers. We
+              source the finest beans from around the world, expertly roast them
+              to perfection, and craft delightful coffee experiences.
+            </p>
+            <div class="flex gap-4">
+              <button
+                class="lg:px-[20px] m-[5px] lg:py-[10px] bg-Primary-color lg:rounded-[30px] lg:font-Poppins-bold text-Secondary-color md:px-[10px] md:py-[4px] md:rounded-2xl max-md:px-4 max-md:py-1 max-md:rounded-2xl sm:px-3 sm:py-1 sm:rounded-2xl hover:bg-Secondary-color hover:text-Primary-color hover:ring-2"
+              >
+                Explore Menu
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div
+          class="absolute bottom-6  right-[1%] transform -translate-x-1/2 flex gap-4 flex-wrap justify-center max-md:hidden"
+        >
+          <div
+            class="w-28 h-28 sm:w-32 sm:h-32 bg-white rounded-lg overflow-hidden shadow-lg"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+              alt="Coffee cup"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="w-28 h-28 sm:w-32 sm:h-32 bg-white rounded-lg overflow-hidden shadow-lg"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+              alt="Coffee beans"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="w-28 h-28 sm:w-32 sm:h-32 bg-white rounded-lg overflow-hidden shadow-lg"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1568649929103-28ffbefaca1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+              alt="Latte art"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div> -->
+      </div>
+
+      <!-- Values Section -->
+      <section class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-16 text-amber-900">
+            Our Core Values
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div
+              class="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition fade-in-section"
+            >
+              <div
+                class="w-20 h-20 mx-auto rounded-full bg-amber-100 flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-seedling text-3xl text-amber-700"></i>
+              </div>
+              <h3 class="font-bold text-xl mb-3 text-amber-800">
+                Sustainability
+              </h3>
+              <p class="text-amber-700">
+                We partner with ethical farms that prioritize environmental
+                conservation and fair wages for workers.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition fade-in-section"
+            >
+              <div
+                class="w-20 h-20 mx-auto rounded-full bg-amber-100 flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-mortar-pestle text-3xl text-amber-700"></i>
+              </div>
+              <h3 class="font-bold text-xl mb-3 text-amber-800">
+                Craftsmanship
+              </h3>
+              <p class="text-amber-700">
+                Our master roasters carefully craft each batch to highlight the
+                unique characteristics of every bean.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition fade-in-section"
+            >
+              <div
+                class="w-20 h-20 mx-auto rounded-full bg-amber-100 flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-heart text-3xl text-amber-700"></i>
+              </div>
+              <h3 class="font-bold text-xl mb-3 text-amber-800">Community</h3>
+              <p class="text-amber-700">
+                We're dedicated to creating welcoming spaces where people can
+                connect over exceptional coffee.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Meet the Team -->
+      <section id="team" class="py-16 px-6 bg-white">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-4 text-amber-900">
+            Meet Our Coffee Experts
+          </h2>
+          <p class="text-center text-amber-700 max-w-2xl mx-auto mb-12">
+            Our passionate team of coffee professionals brings years of
+            experience and dedication to every cup we serve.
+          </p>
+          <!-- Team Card -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-content-center max-w-6xl mx-auto"
+          >
+            <!-- card1 -->
+            <div
+              class="bg-amber-50 p-6 rounded-xl shadow-md text-center hover:shadow-xl transform hover:-translate-y-2 transition duration-300 fade-in-section"
+            >
+              <div
+                class="rounded-full w-30 h-30 mx-auto mb-4 overflow-hidden border-4 border-white shadow-lg"
+              >
+                <img
+                  class="object-center"
+                  src="../img/memberimg/leangey.png"
+                  alt=""
+                />
+              </div>
+              <h3 class="font-bold text-xl mb-1">LeangEy</h3>
+              <p class="text-amber-700 mb-3">Head Roaster</p>
+              <div class="flex justify-center gap-3 text-amber-700">
+                <a href="#"
+                  ><i class="fab fa-linkedin hover:text-amber-600"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-twitter hover:text-amber-600"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-instagram hover:text-amber-600"></i
+                ></a>
+              </div>
+            </div>
+            <!-- card2 -->
+            <div
+              class="bg-amber-50 p-6 rounded-xl shadow-md text-center hover:shadow-xl transform hover:-translate-y-2 transition duration-300 fade-in-section"
+            >
+              <div
+                class="rounded-full w-30 h-30 mx-auto mb-4 overflow-hidden border-4 border-white shadow-lg"
+              >
+                <img src="../img/memberimg/heng.jpg" alt="souheng" />
+              </div>
+              <h3 class="font-bold text-xl mb-1">Shuheng</h3>
+              <p class="text-amber-700 mb-3">Head Roaster</p>
+              <div class="flex justify-center gap-3 text-amber-700">
+                <a href="#"
+                  ><i class="fab fa-linkedin hover:text-amber-600"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-twitter hover:text-amber-600"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-instagram hover:text-amber-600"></i
+                ></a>
+              </div>
+            </div>
+            <!-- card3 -->
+            <div
+              class="bg-amber-50 p-6 rounded-xl shadow-md text-center hover:shadow-xl transform hover:-translate-y-2 transition duration-300 fade-in-section"
+            >
+              <div
+                class="rounded-full w-30 h-30 mx-auto mb-4 overflow-hidden border-4 border-white shadow-lg"
+              >
+                <img src="../img/memberimg/cher.png" alt="cher" />
+              </div>
+              <h3 class="font-bold text-xl mb-1">Lyzhia</h3>
+              <p class="text-amber-700 mb-3">Head Roaster</p>
+              <div class="flex justify-center gap-3 text-amber-700">
+                <a href="#"
+                  ><i class="fab fa-linkedin hover:text-amber-600"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-twitter hover:text-amber-600"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-instagram hover:text-amber-600"></i
+                ></a>
+              </div>
+            </div>
+            <!-- card4 -->
+            <div
+              class="bg-amber-50 p-6 rounded-xl shadow-md text-center hover:shadow-xl transform hover:-translate-y-2 transition duration-300 fade-in-section"
+            >
+              <div
+                class="rounded-full w-30 h-30 mx-auto mb-4 overflow-hidden border-4 border-white shadow-lg"
+              >
+                <img src="../img/memberimg/phally.png" alt="phally" />
+              </div>
+              <h3 class="font-bold text-xl mb-1">Phally</h3>
+              <p class="text-amber-700 mb-3">Head Roaster</p>
+              <div class="flex justify-center gap-3 text-amber-700">
+                <a href="#"
+                  ><i class="fab fa-linkedin hover:text-amber-600"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-twitter hover:text-amber-600"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-instagram hover:text-amber-600"></i
+                ></a>
+              </div>
+            </div>
+            <!-- card5 -->
+            <div
+              class="bg-amber-50 p-6 rounded-xl shadow-md text-center hover:shadow-xl transform hover:-translate-y-2 transition duration-300 fade-in-section"
+            >
+              <div
+                class="rounded-full w-30 h-30 mx-auto mb-4 overflow-hidden border-4 border-white shadow-lg"
+              >
+                <img src="../img/memberimg/tevy.jpg" alt="tevy" />
+              </div>
+              <h3 class="font-bold text-xl mb-1">Tevy</h3>
+              <p class="text-amber-700 mb-3">Head Roaster</p>
+              <div class="flex justify-center gap-3 text-amber-700">
+                <a href="#"
+                  ><i class="fab fa-linkedin hover:text-amber-600"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-twitter hover:text-amber-600"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-instagram hover:text-amber-600"></i
+                ></a>
+              </div>
+            </div>
+            <div
+              class="bg-amber-50 p-6 rounded-xl shadow-md text-center hover:shadow-xl transform hover:-translate-y-2 transition duration-300 fade-in-section"
+            >
+              <div
+                class="rounded-full w-30 h-30 mx-auto mb-4 overflow-hidden border-4 border-white shadow-lg"
+              >
+                <img class="w-32  h-32" src="../img/memberimg/image.png" alt="ratha" />
+              </div>
+              <h3 class="font-bold text-xl mb-1">Ratha</h3>
+              <p class="text-amber-700 mb-3">Head Roaster</p>
+              <div class="flex justify-center gap-3 text-amber-700">
+                <a href="#"
+                  ><i class="fab fa-linkedin hover:text-amber-600"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-twitter hover:text-amber-600"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-instagram hover:text-amber-600"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer-bg pt-16 pb-8 bg-Secondary-color">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div>
+            <div class="flex items-center mb-4">
+              <div
+                class="w-10 h-10 rounded-full bg-amber-700 flex items-center justify-center mr-2"
+              >
+                <span class="text-amber-100 text-xl">☕</span>
+              </div>
+              <h3 class="text-xl font-bold text-amber-900">LATTE-M</h3>
+            </div>
+            <p class="text-amber-700 mb-4">
+              Crafting exceptional coffee experiences since 2007.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-amber-900 hover:text-amber-700"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-amber-900 hover:text-amber-700"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-amber-900 hover:text-amber-700"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-amber-900 hover:text-amber-700"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-4 text-amber-900">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="index.html" class="text-amber-700 hover:text-amber-900"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="menu.html" class="text-amber-700 hover:text-amber-900"
+                  >Our Menu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="testimonials.html"
+                  class="text-amber-700 hover:text-amber-900"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-amber-700 hover:text-amber-900"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-4 text-amber-900">Products</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >Coffee Blends</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >Brewing Equipment</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >Merchandise</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >Gift Cards</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >Subscription Box</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-4 text-amber-900">Newsletter</h4>
+            <p class="text-amber-700 mb-4">
+              Subscribe for exclusive offers and coffee tips
+            </p>
+            <form class="flex flex-col space-y-3">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="px-4 py-2 rounded-lg border border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-500"
+              />
+              <button
+                type="submit"
+                class="bg-amber-700 text-amber-100 py-2 rounded-lg hover:bg-amber-800 transition"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="border-t border-amber-200 mt-12 pt-6 text-center">
+          <p class="text-amber-700">
+            &copy; 2025 LATTE-M Coffee Company. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Intersection Observer JS -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll(".fade-in-section");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+
+        sections.forEach((section) => observer.observe(section));
+      });
+    </script>
+  </body>
+</html>

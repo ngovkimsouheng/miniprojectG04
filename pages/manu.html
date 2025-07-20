@@ -9,9 +9,18 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
       rel="stylesheet"
     />
+    <!-- Add Ionicons script -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body class="bg-Background-color">
-      <header class="bg-Primary-color text-Secondary-color sticky top-0 z-10">
+    <header class="bg-Primary-color text-Secondary-color sticky top-0 z-10">
       <nav
         class="md:flex md:justify-between lg:mx-[100px] md:mx-[90px] items-center max-md:flex max-md:justify-between max-md:mx-[40px] sm:mx-[15px]"
       >
@@ -31,248 +40,277 @@
           class="md:flex md:gap-[30px] max-md:flex max-md:gap-[15px] max-md:font-extralight max-md:text-[10px] max-sm:text-[7px]"
         >
           <li><a href="/index.html">Home</a></li>
-          <li><a href="./pages/about.html">About</a></li>
-          <li><a href="#">Manu</a></li>
-          <li><a href="./pages/testimonail.html">Testimonail</a></li>
-          <li><a href="./pages/contact.html">Contact</a></li>
+          <li><a href="./about.html">About</a></li>
+          <!-- Fixed path -->
+          <li><a class="text-yellow-300" href="#">Menu</a></li>
+          <!-- Fixed spelling -->
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main class="text-Accent-color z-1">
-    <!-- hero section -->
-    <div class="relative p-1">
-      <div class="swiper default-carousel swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div
-              class="bg-indigo-50 rounded-2xl flex justify-center items-center lg:h-[685px] max-sm:h-[350px] lg:w-full md:h-96 md:w-full sm:h-70 sm:w-full"
-            >
-              <img
-                class="bg-no-repeat bg-center bg-cover"
-                src="../img/home/img/hero-1.png"
-                alt=""
-              />
+      <!-- hero section -->
+      <div class="relative p-1">
+        <div class="swiper default-carousel">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="bg-Secondary-color rounded-2xl flex justify-center items-center lg:h-[685px] max-sm:h-[350px] w-full"
+              >
+                <img
+                  class="w-full h-full object-cover rounded-2xl"
+                  src="../img/home/img/manuhero.webp"
+                  alt="Coffee shop interior"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-Secondary-color rounded-2xl flex justify-center items-center lg:h-[685px] max-sm:h-[350px] w-full"
+              >
+                <img
+                  class="w-full h-full object-cover rounded-2xl"
+                  src="../img/home/bean.jpg"
+                  alt="Coffee beans closeup"
+                />
+              </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div
-              class="bg-indigo-50 rounded-2xl flex object-bottomjustify-center items-center lg:h-[420px] lg:w-full md:h-96 md:w-full sm:h-70 sm:w-full"
+          <div class="flex items-center gap-8 lg:justify-start justify-center">
+            <button
+              id="slider-button-left"
+              class="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-Secondary-color !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !left-5 hover:bg-Primary-color"
+              data-carousel-prev
             >
-              <img
-                class="bg-no-repeat bg-center bg-cover"
-                src="../img/home/bean.jpg"
-                alt=""
-              />
-            </div>
+              <svg
+                class="h-5 w-5 text-Secondary-color group-hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M10.0002 11.9999L6 7.99971L10.0025 3.99719"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button
+              id="slider-button-right"
+              class="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-Secondary-color !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !right-5 hover:bg-Primary-color"
+              data-carousel-next
+            >
+              <svg
+                class="h-5 w-5 text-Secondary-color"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M5.99984 4.00012L10 8.00029L5.99748 12.0028"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="flex items-center gap-8 lg:justify-start justify-center">
-          <button
-            id="slider-button-left"
-            class="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !left-5 hover:bg-indigo-600"
-            data-carousel-prev
-          >
-            <svg
-              class="h-5 w-5 text-indigo-600 group-hover:text-white"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-            >
-              <path
-                d="M10.0002 11.9999L6 7.99971L10.0025 3.99719"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-          <button
-            id="slider-button-right"
-            class="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !right-5 hover:bg-indigo-600"
-            data-carousel-next
-          >
-            <svg
-              class="h-5 w-5 text-indigo-600 group-hover:text-white"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-            >
-              <path
-                d="M5.99984 4.00012L10 8.00029L5.99748 12.0028"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-        <div class="swiper-pagination"></div>
       </div>
-    </div>
 
-    <!-- card -->
-    <main>
-      <div class="container mx-auto max-w-7xl">
-        <h2 class="text-4xl font-bold text-center m-10">MENU</h2>
-        <div class="grid grid-cols-4">
+      <!-- card section -->
+      <div class="container mx-auto max-w-7xl py-10">
+        <h2 class="text-4xl font-bold text-center m-10 text-Primary-color">
+          MENU
+        </h2>
+        <div class="flex flex-wrap justify-center">
           <div class="p-2 flex flex-col items-center">
             <img
-              class="rounded-t-lg w-full lg:h-65 md:h-65 sm:55"
+              class="rounded-lg w-full h-64 object-cover ring-1 ring-Primary-color"
               src="../img/home/img/hot.png"
-              alt=""
+              alt="Hot coffee"
             />
             <a
               href="page-1.html"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#432818] rounded-lg hover:bg-[#5c3d27] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="mt-4 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-2xl bg-Primary-color ring hover:ring-1 hover:ring-Primary-color hover:bg-Secondary-color hover:text-Primary-color"
             >
-              Hot coffee
+              HOT DRINKS
             </a>
           </div>
           <div class="p-2 flex flex-col items-center">
             <img
-              class="rounded-t-lg w-full lg:h-65 md:h-65 sm:55"
+              class="rounded-lg w-full h-64 object-cover ring-1 ring-Primary-color"
               src="../img/home/img/cold.png"
-              alt=""
+              alt="cold coffee"
             />
             <a
               href="page-2.html"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#432818] rounded-lg hover:bg-[#5c3d27] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="mt-4 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-2xl bg-Primary-color ring hover:ring-1 hover:ring-Primary-color hover:bg-Secondary-color hover:text-Primary-color"
             >
-              Cold coffee
+              COLD DRINKS
             </a>
           </div>
           <div class="p-2 flex flex-col items-center">
             <img
-              class="rounded-t-lg w-full lg:h-65 md:h-65 sm:55"
+              class="rounded-lg w-full h-64 object-cover ring-1 ring-Primary-color"
               src="../img/home/img/add ons.png"
-              alt=""
-            />
-            <a
-              href="page-4.html"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#432818] rounded-lg hover:bg-[#5c3d27] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Add Ons
-            </a>
-          </div>
-          <div class="p-2 flex flex-col items-center">
-            <img
-              class="rounded-t-lg w-full lg:h-65 md:h-65 sm:55"
-              src="../img/home/img/refreshment.png"
-              alt=""
+              alt="add ons"
             />
             <a
               href="page-3.html"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#432818] rounded-lg hover:bg-[#5c3d27] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="mt-4 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-2xl bg-Primary-color ring hover:ring-1 hover:ring-Primary-color hover:bg-Secondary-color hover:text-Primary-color"
             >
-              Refreshment
+              REFRESHMENTS
+            </a>
+          </div>
+          <div class="p-2 flex flex-col items-center">
+            <img
+              class="rounded-lg w-full h-64 object-cover ring-1 ring-Primary-color"
+              src="../img/home/img/refreshment.png"
+              alt="refreshment"
+            />
+            <a
+              href="page-4.html"
+              class="mt-4 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-2xl bg-Primary-color ring hover:ring-1 hover:ring-Primary-color hover:bg-Secondary-color hover:text-Primary-color"
+            >
+              ADD ON
             </a>
           </div>
         </div>
       </div>
     </main>
-    <footer
-      class="bg-Secondary-color md:mt-[40px] max-md:mt-[30px] max-md:p-[15px] max-sm:p-[10px] sm:mt-[25px] max-sm:pb-[10px]"
-    >
-      <section
-        class="xl:flex xl:justify-between md:grid md:grid-cols-3 md:grid-rows-2 max-md:grid max-md:grid-rows-3 max-md:grid-cols-2 max-md:place-content-center max-md:gap-[10px] md:gap-[20px] md:place-content-center lg:mx-[100px] md:mx-[90px] max-md:mx-[40px] sm:mx-[15px] md:p-[20px] max-sm:flex max-sm:flex-col max-sm:m-[10px]"
-      >
-        <div class="font-Poppins-bold flex flex-col gap-[15px]">
-          <p class="font-Poppins-bold text-Primary-color">FOLLOW US</p>
-          <div class="flex gap-[10px] text-Primary-color">
-            <ion-icon
-              class="md:text-[28px] max-md:text-[20px]"
-              name="logo-facebook"
-            ></ion-icon
-            ><ion-icon
-              class="md:text-[28px] max-md:text-[20px]"
-              name="logo-tiktok"
-            ></ion-icon
-            ><ion-icon
-              class="md:text-[28px] max-md:text-[20px]"
-              name="logo-instagram"
-            ></ion-icon>
-          </div>
-        </div>
-        <div class="font-Poppins-regular flex flex-col gap-[10px]">
-          <h2
-            class="text-Primary-color font-Poppins-semi-bold md:text-[28px max-md:text-[20px] sm:text-[18px]"
-          >
-            Quick link
-          </h2>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">About</p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">Shop</p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">Market</p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            How we works
-          </p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            Gallery
-          </p>
-        </div>
-        <div class="font-Poppins-regular flex flex-col gap-[10px]">
-          <h2
-            class="text-Primary-color font-Poppins-semi-bold md:text-[28px max-md:text-[20px] sm:text-[18px]"
-          >
-            Main Product
-          </h2>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">Coffee</p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            Green coffee
-          </p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            American black coffee
-          </p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            Roasted Coffee
-          </p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            Coffee bean
-          </p>
-        </div>
-        <div class="font-Poppins-regular flex flex-col gap-[10px]">
-          <h2
-            class="text-Primary-color font-Poppins-semi-bold md:text-[28px max-md:text-[20px] sm:text-[18px]"
-          >
-            Collaboration brands
-          </h2>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            Arabica
-          </p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            Nest coffee
-          </p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">
-            Stabuck
-          </p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">Brown</p>
-          <p class="md:text-[16px] max-md:text-[14px] sm:text-[12px]">Nestle</p>
-        </div>
-        <div class="text-Primary-color flex flex-col gap-[10px] md:grid-">
-          <h2
-            class="font-Poppins-semi-bold md:text-[28px max-md:text-[20px] sm:text-[18px]"
-          >
-            Join our newsletter
-          </h2>
+    <footer class="footer-bg pt-16 pb-8 bg-Secondary-color">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
           <div>
-            <input
-              type="text"
-              placeholder="Email"
-              class="ring-2 text-Accent-color focus:ring-2 focus:ring-Secondary-color ring-Primary-color rounded-2xl lg:px-4 lg:py-2 md:px-[10px] md:py-[4px] max-md:px-4 max-md:py-1 sm:px-3 sm:py-1"
-            />
-            <button
-              class="lg:px-[20px] lg:py-[10px] bg-Primary-color lg:rounded-[30px] md:my-[5px] max-md:my-[5px] lg:font-Poppins-bold text-Secondary-color md:px-[15px] md:py-[4px] md:rounded-2xl max-md:px-4 max-md:py-1 max-md:rounded-2xl sm:px-3 sm:py-1 sm:rounded-2xl hover:bg-Secondary-color hover:text-Primary-color hover:ring-2 hover:ring-Primary-color"
-            >
-              send
-            </button>
+            <div class="flex items-center mb-4">
+              <div
+                class="w-10 h-10 rounded-full bg-amber-700 flex items-center justify-center mr-2"
+              >
+                <span class="text-amber-100 text-xl">☕</span>
+              </div>
+              <h3 class="text-xl font-bold text-amber-900">LATTE-M</h3>
+            </div>
+            <p class="text-amber-700 mb-4">
+              Crafting exceptional coffee experiences since 2007.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-amber-900 hover:text-amber-700"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-amber-900 hover:text-amber-700"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-amber-900 hover:text-amber-700"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-amber-900 hover:text-amber-700"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-4 text-amber-900">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="index.html" class="text-amber-700 hover:text-amber-900"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="menu.html" class="text-amber-700 hover:text-amber-900"
+                  >Our Menu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="testimonials.html"
+                  class="text-amber-700 hover:text-amber-900"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-amber-700 hover:text-amber-900"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-4 text-amber-900">Products</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >Coffee Blends</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >Brewing Equipment</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >Merchandise</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >Gift Cards</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-amber-700 hover:text-amber-900"
+                  >Subscription Box</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-4 text-amber-900">Newsletter</h4>
+            <p class="text-amber-700 mb-4">
+              Subscribe for exclusive offers and coffee tips
+            </p>
+            <form class="flex flex-col space-y-3">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="px-4 py-2 rounded-lg border border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-500"
+              />
+              <button
+                type="submit"
+                class="bg-amber-700 text-amber-100 py-2 rounded-lg hover:bg-amber-800 transition"
+              >
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
-      </section>
+
+        <div class="border-t border-amber-200 mt-12 pt-6 text-center">
+          <p class="text-amber-700">
+            &copy; 2025 LATTE-M Coffee Company. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
