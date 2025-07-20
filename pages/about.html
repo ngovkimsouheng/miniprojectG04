@@ -77,7 +77,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="z-1">
       <!-- About Us Section -->
       <section
         id="about"
@@ -110,9 +110,9 @@
       </section>
 
       <!-- Hero Section -->
-      <div class="relative">
+      <div class="relative z-1">
         <div
-          class="relative rounded-2xl bg-cover bg-center h-[500px] w-full"
+          class="relative bg-center lg:h-[500px] md:h-[600px] w-full"
           style="
             background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
           "
@@ -124,7 +124,9 @@
             <h1 class="text-4xl md:text-6xl font-bold mb-6 max-w-2xl">
               Our Coffee Journey
             </h1>
-            <p class="text-lg md:text-xl max-w-2xl mb-8">
+            <p
+              class="text-lg md:text-xl max-w-2xl mb-8 max-md:text-[15px] max-md:line-clamp-3"
+            >
               At LATTE-M, our journey began with a passion for exceptional
               coffee and a vision to create a cozy haven for coffee lovers. We
               source the finest beans from around the world, expertly roast them
@@ -140,8 +142,8 @@
           </div>
         </div>
 
-        <div
-          class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-4 flex-wrap justify-center"
+        <!-- <div
+          class="absolute bottom-6  right-[1%] transform -translate-x-1/2 flex gap-4 flex-wrap justify-center max-md:hidden"
         >
           <div
             class="w-28 h-28 sm:w-32 sm:h-32 bg-white rounded-lg overflow-hidden shadow-lg"
@@ -170,7 +172,7 @@
               class="w-full h-full object-cover"
             />
           </div>
-        </div>
+        </div> -->
       </div>
 
       <!-- Values Section -->
@@ -374,7 +376,7 @@
               >
                 <img src="../img/memberimg/heng.jpg" alt="" />
               </div>
-              <h3 class="font-bold text-xl mb-1">Shuheng</h3>
+              <h3 class="font-bold text-xl mb-1">Ratha</h3>
               <p class="text-amber-700 mb-3">Head Roaster</p>
               <div class="flex justify-center gap-3 text-amber-700">
                 <a href="#"
